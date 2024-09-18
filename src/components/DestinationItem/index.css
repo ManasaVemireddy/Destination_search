@@ -1,0 +1,41 @@
+/* index.css */
+
+.dest-item {
+  list-style: none;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dest-item:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.dest-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.dest-item:hover .dest-image {
+  transform: scale(1.05);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin: 0; /* Remove default margin */
+}
